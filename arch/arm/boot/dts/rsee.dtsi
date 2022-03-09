@@ -1,0 +1,15 @@
+/ {
+	rsee {
+		compatible = "rongcard,rsee-tz";
+		method = "smc";
+	};
+	spi0-clk {
+		compatible = "rsee, peri-clk";
+		clkname = "spi-main";
+		clocks = <&perisys PERI_SPI0>;
+		clock-names = "spi-main";
+		clock-frequency = <109000000>;
+		clock-div = <1>;
+	};
+};
+
